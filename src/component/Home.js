@@ -363,7 +363,7 @@ function Home() {
                 style={{
                   backgroundColor: "hsl(26, 100%, 55%)",
                   color: "white",
-                  width: "100em",
+                  width: "30em",
                   maxWidth: "100%",
                   fontSize: "13px",
                   height: "50px",
