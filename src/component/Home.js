@@ -303,6 +303,8 @@ function Home() {
               md={4}
               style={{
                 marginTop: "20px",
+                textAlign: "center",
+                display: "flex",
               }}
             >
               <Button
@@ -310,7 +312,9 @@ function Home() {
                 style={{
                   backgroundColor: "lavender",
                   color: "hsl(26, 100%, 55%)",
-                  width: "50px",
+                  width: "7.8em",
+                  maxWidth: "100%",
+                  height: "50px",
                 }}
                 onClick={handleDecrement}
               >
@@ -324,7 +328,9 @@ function Home() {
                 variant="light"
                 style={{
                   backgroundColor: "lavender",
-                  width: "50px",
+                  width: "7.8em",
+                  height: "50px",
+                  maxWidth: "100%",
                 }}
               >
                 <span>{quantity}</span>
@@ -335,7 +341,9 @@ function Home() {
                 style={{
                   backgroundColor: "lavender",
                   color: "hsl(26, 100%, 55%)",
-                  width: "50px",
+                  width: "7.8em",
+                  maxWidth: "100%",
+                  height: "50px",
                 }}
                 onClick={handleIncrement}
               >
@@ -355,10 +363,10 @@ function Home() {
                 style={{
                   backgroundColor: "hsl(26, 100%, 55%)",
                   color: "white",
-                  width: "20em",
+                  width: "100em",
                   maxWidth: "100%",
                   fontSize: "13px",
-                  height: "40px",
+                  height: "50px",
                   marginTop: "20px",
                 }}
               >
