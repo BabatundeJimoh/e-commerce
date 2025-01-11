@@ -28,12 +28,14 @@ function Lightbox({ show, handleClose, images }) {
         <Carousel>
           {images.map((image, index) => (
             <Carousel.Item key={index}>
-              <img
-                src={image}
-                className="d-block w-100"
-                alt={`Image ${index + 1}`}
-              />
-            </Carousel.Item>
+            <img
+              src={image}
+              className="d-block w-100"
+              alt=""
+              aria-label={`Image ${index + 1}`}
+            />
+          </Carousel.Item>
+          
           ))}
         </Carousel>
       </Modal.Body>
@@ -151,15 +153,17 @@ function Home() {
                     {cartItems.map((item) => (
                       <div key={item.id}>
                         <NavDropdown.Item>
-                          <img
-                            src={Image8}
-                            style={{
-                              width: "40px",
-                              height: "40px",
-                              borderRadius: "20%",
-                              marginRight: "20px",
-                            }}
-                          />
+                        <img
+  src={Image8}
+  alt="Product thumbnail"
+  style={{
+    width: "40px",
+    height: "40px",
+    borderRadius: "20%",
+    marginRight: "20px",
+  }}
+/>
+
                           Fall Limited Edition Sneakers
                           <p style={{ textAlign: "center", fontSize: "14px" }}>
                             125.00 ({item.quantity}) ={" "}
